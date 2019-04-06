@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    var arr=[
+      {
+        name:"xx",
+        age:'18',
+        data:[
+          '1','2'
+        ]
+      },
+      {
+        name: "ww",
+        age: '128',
+        data: [
+          '4', '5'
+        ]
+      },
+      {
+        name: "ee",
+        age: '1118',
+        data: [
+          '9', '6'
+        ]
+      }
+    ]
+    // let a =arr.map(({name, data})=>{
+    //   if(name==="ee"){
+    //     return data
+    //   }
+    //   // return ({name,age})
+    // })
+    let a=arr.find(item=>{
+        if(item.name==="ee"){
+          return item.data
+        }
+      })
+      let b=a.data
+      console.log(b)
+  </script>
+</body>
+</html>
